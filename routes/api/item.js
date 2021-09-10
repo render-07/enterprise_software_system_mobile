@@ -39,8 +39,8 @@ router.post('/addData', (req, res) => {
     });
 });
 
-router.post('/itempurchase/:itemName', (req, res) => {
-  Item.updateOne({ itemName: req.params.itemName }, { '$inc': { 'quantity': -1 } })
+router.post('/itempurchase/:itemName/:quantity', (req, res) => {
+  Item.updateOne({ itemName: req.params.itemName }, { '$inc': { 'quantity': -req.params.quantity } })
       .then(() => res.json({success: true}))
       .catch(err => res.status(404).json({success: false}));
 });
