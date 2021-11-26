@@ -1,4 +1,4 @@
-# enterprise_software_system
+# enterprise_software_system_mobile
 Repository for subject Enterprise Software System AY 2020-2021 (mobile app). This is for educational purpose only.
 
 ### Steps to setup project
