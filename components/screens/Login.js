@@ -60,7 +60,7 @@ export const Login = ({navigation}) => {
 
     const handleLogin = (credentials, setSubmitting) => {
         handleMessage(null);
-        const url = 'http://192.168.1.30:4000/api/users/signin';
+        const url = 'http://192.168.1.8:5000/api/users/signin';
         axios
           .post(url, credentials)
           .then((res) => {

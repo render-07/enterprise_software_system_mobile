@@ -42,7 +42,7 @@ mongoose
     .catch(err => console.log(err));
 
 // Declare PORT number (process.env.port is for HEROKU) 
-const port = process.env.port || 4000;
+const port = process.env.port || 5000;
 
 // Use routes
 app.use('/api/users', require('./routes/api/user'));

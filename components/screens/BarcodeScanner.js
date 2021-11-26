@@ -25,7 +25,7 @@ export const BarcodeScanner = () => {
   }, []);
 
   // const addData = () => {
-  //   const url = 'http://192.168.1.30:4000/api/item/addData';
+  //   const url = 'http://192.168.1.8:5000/api/item/addData';
 
   //   const newItem = {
   //     itemName: 'Air Booster',
@@ -60,7 +60,7 @@ export const BarcodeScanner = () => {
   const sendData = () => {
     if (data) {
       axios
-          .post(`http://192.168.1.30:4000/api/item/itempurchase/${data}/${parseInt(quantity)}`)
+          .post(`http://192.168.1.8:5000/api/item/itempurchase/${data}/${parseInt(quantity)}`)
           .then((res) => {
             setScanned(true);
             Alert.alert(

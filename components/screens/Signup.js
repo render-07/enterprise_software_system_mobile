@@ -66,7 +66,7 @@ export const Signup = () => {
 
     const handleSignup = (credentials, setSubmitting) => {
         handleMessage(null);
-        const url = 'http://192.168.1.30:4000/api/users/signup';
+        const url = 'http://192.168.1.8:5000/api/users/signup';
         axios
           .post(url, credentials)
           .then((res) => {
@@ -83,8 +83,8 @@ export const Signup = () => {
           })
           .catch((err) => {
             setSubmitting(false);
-            handleMessage('An error occurred. Check your network and try again');
-            console.log(err.toJSON());
+            handleMessage('An error occurred. Check your netwewrwerewrork and try again');
+            console.log(err);
           });
     };
 
