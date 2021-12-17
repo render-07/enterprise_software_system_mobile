@@ -195,7 +195,7 @@ export const StyledTextInput = styled.TextInput`
     margin-vertical: 3px;
     margin-bottom: 10px;
     color: ${darkest};
-    borderWidth: 1;
+    borderWidth: 1px;
     borderColor: #B8B8B8;
 `;
 
