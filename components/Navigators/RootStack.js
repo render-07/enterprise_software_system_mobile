@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { GetStarted } from '../screens/GetStarted';
 import { Login } from '../screens/Login';
 import { Signup } from '../screens/Signup';
 import { Welcome } from '../screens/Welcome';
@@ -29,7 +30,7 @@ export const RootStack = () => {
                                 paddingLeft: 10
                             }  
                         }}
-                        initialRouteName='Login'
+                        initialRouteName='GetStarted'
                         >
                         {storedCredentials ?
                             <>
@@ -38,6 +39,7 @@ export const RootStack = () => {
                             </> 
                             :    
                             <>
+                                <Stack.Screen name='GetStarted' component={GetStarted}/>   
                                 <Stack.Screen name='Login' component={Login}/>
                                 <Stack.Screen name='Signup' component={Signup}/>   
                             </>

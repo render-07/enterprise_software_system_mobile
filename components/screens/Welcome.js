@@ -26,7 +26,7 @@ export const Welcome = ({navigation}) => {
               'FuturaPTExtraBold': require('../../assets/fonts/FuturaPTExtraBold.otf'),
               'FuturaPTBold': require('../../assets/fonts/FuturaPTBold.otf'),
             }).then(() => setFontLoaded(true));
-          };+
+          };
           loadFonts();
     }, [])
 

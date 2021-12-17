@@ -26,6 +26,12 @@ export const Colors = {
 
 const { primary, secondary, tertiary, darkLight, brand, red, darkest } = Colors;
 
+export const GetStartedStyledContainer = styled.View`
+    flex: 1;
+    padding: 25px;
+    background-color: ${brand};
+`
+
 export const StyledContainer = styled.View`
     flex: 1;
     padding: 25px;
@@ -77,6 +83,37 @@ export const Avatar = styled.Image`
     border-color: ${secondary};
     margin-bottom: 10px;
     margin-top: 10px;
+`;
+
+export const GetStartedLogo = styled.Image`
+    width: 170px;
+    height: 170px;
+`;
+
+export const GetStartedLogoView = styled.View`
+    width: 170px;
+    height: 170px;
+    borderRadius: 170px;
+    overflow: hidden;
+    shadowOffset: { width: 10, height: 10 };
+    shadowColor: ${darkest};
+    shadowOpacity: 1;
+    elevation: 10;
+    backgroundColor : #EEEEEE;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+`;
+
+
+
+export const GetStartedTitle = styled.Text`
+  color: ${primary};
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const PageTitle = styled.Text`
@@ -148,7 +185,7 @@ export const StyledFormArea = styled.View`
 `;
 
 export const StyledTextInput = styled.TextInput`
-    background-color: #fff;
+    background-color: #EEEEEE;
     padding: 15px;
     padding-left: 55px;
     padding-right: 55px;
@@ -159,7 +196,7 @@ export const StyledTextInput = styled.TextInput`
     margin-bottom: 10px;
     color: ${darkest};
     borderWidth: 1;
-    borderColor: #00989b;
+    borderColor: #B8B8B8;
 `;
 
 export const StyledInputLabel = styled.Text`
@@ -183,12 +220,12 @@ export const RightIcon = styled.TouchableOpacity`
 `;
 
 export const StyledButton = styled.TouchableOpacity`
-    background-color: ${brand};
     justify-content: center;
     border-radius: 30px;
     height: 60px;
     align-items: center;
     margin: 0px 65px 0px 65px;
+        background-color: ${brand};
 
     ${(props) => props.google && `
         background-color: ${brand};
@@ -203,7 +240,17 @@ export const StyledButton = styled.TouchableOpacity`
     `}
 
     ${(props) => props.signup && `
+        background-color: ${brand};
         margin-top: 0px;
+    `}
+
+    ${(props) => props.getStarted && `
+        margin-top: 20px;
+        background-color: ${brand};
+        borderWidth: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        borderColor: ${primary};
     `}
 `;
 
