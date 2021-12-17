@@ -6,17 +6,25 @@ const StatusBarHeight = Constants.statusBarHeight;
 
 // colors
 export const Colors = {
+    // primary: '#FFFFFF',
+    // secondary: '#DBFFEF',
+    // tertiary: '#1F2937',
+    // darkLight: '#6A8076',
+    // brand: '#00989b',
+    // green: '#00989b',
+    // red: '#EF4444',
+    // darkest: '#6A8076',
     primary: '#FFFFFF',
-    secondary: '#DBFFEF',
-    tertiary: '#1F2937',
-    darkLight: '#6A8076',
-    brand: '#69C79D',
-    green: '#9CE0C3',
+    secondary: '#00989D',
+    tertiary: '#DCDEDD',
+    darkLight: '#99A2A1',
+    brand: '#00989D',
+    //green: '#00989D',
     red: '#EF4444',
     darkest: '#6A8076',
 }
 
-const { primary, secondary, tertiary, darkLight, brand, green, red, darkest } = Colors;
+const { primary, secondary, tertiary, darkLight, brand, red, darkest } = Colors;
 
 export const StyledContainer = styled.View`
     flex: 1;
@@ -88,11 +96,11 @@ export const PageTitle = styled.Text`
     `}
 
     ${(props) => props.welcome && `
-        font-size: 45px;
+        font-size: 37px;
         text-align: left;
         width: 90%;
-        margin-top: 5px;
-        margin-left: 10px;
+        margin-top: 17px;
+        margin-left: 50px;
     `}
 `;
 
@@ -140,7 +148,7 @@ export const StyledFormArea = styled.View`
 `;
 
 export const StyledTextInput = styled.TextInput`
-    background-color: #dedede;
+    background-color: #fff;
     padding: 15px;
     padding-left: 55px;
     padding-right: 55px;
@@ -150,6 +158,8 @@ export const StyledTextInput = styled.TextInput`
     margin-vertical: 3px;
     margin-bottom: 10px;
     color: ${darkest};
+    borderWidth: 1;
+    borderColor: #00989b;
 `;
 
 export const StyledInputLabel = styled.Text`
@@ -181,7 +191,7 @@ export const StyledButton = styled.TouchableOpacity`
     margin: 0px 65px 0px 65px;
 
     ${(props) => props.google && `
-        background-color: ${green};
+        background-color: ${brand};
         flex-direction: row;
         justify-content: center;
         margin: 5px 5px 0 5px;
